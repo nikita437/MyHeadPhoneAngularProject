@@ -1,0 +1,12 @@
+{
+  "project": [
+    {
+      "register_firstname": "nikita",
+      "register_lastname": "jagdale",
+      "register_email": "kdkh@gmail.com",
+      "register_password": "12345",
+      "register_repeatpassword": "12345",
+      "id": 1
+    }
+  ]
+}
