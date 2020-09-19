@@ -14,7 +14,9 @@ import { WireComponent } from './wire/wire.component';
 import{HttpClientModule} from '@angular/common/http';
 import { DataService } from './data.service';
 import { GetregComponent } from './getreg/getreg.component';
-import { RegisterdashboardComponent } from './registerdashboard/registerdashboard.component';
+import { RdashboardComponent } from './rdashboard/rdashboard.component';
+import { UpdateuserComponent } from './updateuser/updateuser.component';
+
 
 
 @NgModule({
@@ -29,9 +31,10 @@ import { RegisterdashboardComponent } from './registerdashboard/registerdashboar
   WirelessComponent,
   WireComponent,
   GetregComponent,
-  RegisterdashboardComponent,
- 
   
+  RdashboardComponent,
+  
+  UpdateuserComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,7 @@ import { RegisterdashboardComponent } from './registerdashboard/registerdashboar
     HttpClientModule
 
   ],
-  providers: [DataService],
+ providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

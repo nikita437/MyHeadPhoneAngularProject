@@ -1,12 +1,15 @@
+
+
 * {box-sizing: border-box}
 /* Full-width input fields */
   input[type=text], input[type=password] ,input[type=number]{
   width: 25%;
   padding: 10px;
-  margin: 10px 10px 22px 0;
+  margin: 20px 10px 22px 10px;
   display: inline-block;
   border: none;
   background: wheat;
+  float: none;
 }
 
 /* Add a background color when the inputs get focus */

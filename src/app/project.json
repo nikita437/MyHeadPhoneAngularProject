@@ -1,12 +1,40 @@
 {
   "project": [
     {
-      "register_firstname": "nikita",
-      "register_lastname": "jagdale",
-      "register_email": "kdkh@gmail.com",
-      "register_password": "12345",
-      "register_repeatpassword": "12345",
+      "register_firstname": "meera",
+      "register_lastname": "tekawade",
+      "register_number": 8390889092,
+      "register_email": "meera123@gmail.com",
+      "register_password": "111111",
+      "register_repeatpassword": "111111",
       "id": 1
+    },
+    {
+      "register_firstname": "niki",
+      "register_lastname": "jagdale",
+      "register_number": 8390889092,
+      "register_email": "nikita318@gmail.com",
+      "register_password": "123456",
+      "register_repeatpassword": "12345",
+      "id": 4
+    },
+    {
+      "register_firstname": "asmita",
+      "register_lastname": "jagdale",
+      "register_number": 9823920181,
+      "register_email": "asmita123@gmail.com",
+      "register_password": "333333",
+      "register_repeatpassword": "333333",
+      "id": 5
+    },
+    {
+      "register_firstname": "komal",
+      "register_lastname": "kadam",
+      "register_number": 782136549,
+      "register_email": "komalk31@gmail.com",
+      "register_password": "999999",
+      "register_repeatpassword": "999999",
+      "id": 6
     }
   ]
 }

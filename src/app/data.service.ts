@@ -7,7 +7,15 @@ const api="http://localhost:5555/project/"
 @Injectable({
   providedIn: 'root'
 })
+
 export class DataService {
+  
+  constructor( private httpClient:HttpClient) { }
+
+  getDataById(id)
+  {
+    return this.httpClient.get(api+id)
+  }
 
 saveData(data)
 {
@@ -19,7 +27,15 @@ getData()
   return this.httpClient.get(api)
 }
 
+updateData(id,data)
+{
+  return this.httpClient.put(api+id,data)
+}
 
-  constructor(
-    private httpClient:HttpClient) { }
+deleteData(id)
+{
+  return this.httpClient.delete(api+id)
+}
+
+  
 }

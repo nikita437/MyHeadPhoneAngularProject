@@ -1,0 +1,30 @@
+<div class='jumbotron'>
+<table class=" bg-muted table table-striped table-hover">
+    <thead>
+        <tr><th colspan="8" >Registration form</th></tr>
+<tr style="background-color: crimson;">
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Email</th>
+    <th>Contact number</th>
+    <th>Password</th>
+    <th>Confirm Password</th>
+    <th> Edit Details</th>
+    <th> Delete Details</th>
+</tr>   
+</thead>
+<tbody>
+    <tr *ngFor="let r of register">
+          <td>{{r.register_firstname}}</td>
+          <td>{{r.register_lastname}}</td>
+          <td>{{r.register_email}}</td>
+          <td>{{r.register_number}}</td>
+          <td>{{r.register_password}}</td>
+          <td>{{r.register_repeatpassword}}</td>
+          <td><a class="btn btn-info" [routerLink]="['/update',r.id]">Edit</a></td>
+          <td><a class="btn btn-danger" (click)="delete(r.id)" >Delete</a></td>
+    </tr>
+
+</tbody>
+</table>
+</div>

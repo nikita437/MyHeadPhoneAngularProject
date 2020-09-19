@@ -1,6 +1,7 @@
 import { registerLocaleData } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../data.service';
 import { register} from './register';
 
@@ -11,34 +12,35 @@ import { register} from './register';
 })
 
 export class SignupComponent implements OnInit {
-  form:FormGroup
-project:any=[]
+  form:FormGroup;
 
-getProjectData()
-{
-  this.dataservice.getData().subscribe((res)=> {
-    this.project=res
-  })
-}
+  constructor(private dataservice:DataService,private activatedroute:ActivatedRoute,private router:Router) { }
 
-register()
+
+regist()
 {
+
+  console.log(this.form.value)
+
   this.dataservice.saveData(this.form.value).subscribe((res)=> {
-    alert("register successfully")
+console.log("data added",res);
+alert("register successfully")
+this.router.navigateByUrl("/")
   })
 }
-  constructor(private dataservice :DataService) { }
 
-  ngOnInit(): void 
+
+  ngOnInit(): void
   {
-    this.getProjectData()
+    //this.getRegisterData()
 
 this.form =new FormGroup(
   {
     register_firstname:new FormControl(""),
   register_lastname:new FormControl(""),
+  register_number:new FormControl(""),
 register_email:new FormControl(""),
-  register_password:new FormControl(""),
+   register_password:new FormControl(""),
   register_repeatpassword:new FormControl("")
 })
 
